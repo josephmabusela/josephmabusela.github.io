@@ -6,20 +6,37 @@
     <title>My Portfolio Webpage</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <!--Navigation section-->
-  <header class="grid">
-    <div class="navbar">
-      <a href="#showcase">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#main-footer">Contact</a>
+    <!-- Top Navigation Menu -->
+    <div class="grid">
+        <a href="./Kopano mabusela (1).pdf">My CV</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#main-footer">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
     </div>
-  </header>
+
     <!--Header Showcase-->
-    <header id="showcase" class="grid">
+    <header id="showcase" class="active">
         <div class="bg-image"></div>
             <div class="content-wrap">
             <h1>Welcome</h1>
@@ -39,7 +56,7 @@
     <!--Main Area-->
     <main id="main">
         <!--Section A-->
-        <section id="section-a" class="grid">
+        <section class="grid" id="section-a">
             <div class="content-wrap">
                 <h2 class="content-title">Skills</h2>
                 <div class="content-text">
@@ -50,14 +67,14 @@
         </section>
         <!--Section B-->
         <h1 id="projects">Projects</h1>
-        <section id="section-b" class="grid">
+        <section id="section-b">
             <ul>
                 <li>
                     <div class="card">
                         <img src="galaxy.jpg" alt="">
                         <div class="card-content">
-                            <h3 class="card-title">Basic Webpage</h3>
-                            <a href="https://josephmabusela.github.io/basic-webpage/">Click To See The Webpage</a>
+                            <h3 class="card-title">currency-converter App</h3>
+                            <a href="https://josephmabusela.github.io/currency-converter/">Click To See The App</a>
                         </div>
                     </div>
                 </li>
@@ -78,8 +95,8 @@
                 <h2 class="content-title">Contact</h2>
                 <p>Here's my social media links and GitHub</p>
                 <a href="https://github.com/josephmabusela"><i class="fa fa-github-alt fa-2x"></i></a>
-                <a href="https://instagram.com/kopano_mabusela"><i class="fa fa-instagram fa-2x"></i></a>
-                <a href="http://www.twitter.com/@randomblakdude"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://instagram.com/kopano_mabusela_"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href="http://mabuselakopano@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
             </div>
         </section>
     </main>

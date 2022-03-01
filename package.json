@@ -1,0 +1,24 @@
+{
+  "name": "josephmabusela.github.io",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmabusela/josephmabusela.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephmabusela/josephmabusela.github.io/issues"
+  },
+    "dependencies": {
+      "bootstrap": "^5.1.3"
+    },
+  "homepage": "https://github.com/josephmabusela/josephmabusela.github.io#readme"
+}

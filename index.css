@@ -1,3 +1,49 @@
+/* Style the navigation menu */
+.grid {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .grid #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .grid a {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  
+  /* Style the hamburger menu */
+  .grid a.icon {
+    color: #000;
+    background-color: #f2f2f2;
+    display: block;
+    position: absolute;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .grid a:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    color: white;
+  }
+
+
+
 /*Navbar*/
 .navbar {
     background-color: #c0c0c0;
@@ -18,7 +64,7 @@
   }
   
   .navbar a:hover {
-    background-color: aqua;
+    background-color: #bbd2ff;
     color: black;
   }
 
@@ -59,15 +105,26 @@ p {
 }
 
 .btn:hover {
-    background: #fff;
-    color: aqua;
+    background: #333;
+    color: #333;
 }
 
 /*About Me*/
+
+#about a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#abouot:hover {
+    color: #bbd2ff;
+}
+
 #about img{
-    width: 300px;
-    height: 300px;
-    padding: 5%;
+    width: 20%;
+    padding-top: 1em;
+    margin: auto;
+    display: block;
 }
 
 
@@ -184,7 +241,9 @@ p {
 }
 
 #section-d a {
-    padding: 5%;
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
 }
 
 /*Footer*/
@@ -197,7 +256,6 @@ p {
 }
 
 #main-footer a {
-    color: aqua;
     text-decoration: none;
 }
 
